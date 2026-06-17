@@ -4,6 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Voice Debrief — What's new</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%278%27%20fill%3D%27%2300A3AD%27%2F%3E%3Cpath%20transform%3D%27translate%284%2C4%29%27%20fill%3D%27%23ffffff%27%20d%3D%27M12%2014a3%203%200%200%200%203-3V5a3%203%200%200%200-6%200v6a3%203%200%200%200%203%203zm5-3a5%205%200%200%201-10%200H5a7%207%200%200%200%206%206.92V21h2v-3.08A7%207%200%200%200%2019%2011z%27%2F%3E%3C%2Fsvg%3E">
+<meta name="description" content="You just talk after a visit — the AI turns it into the interaction, the recap email, the follow-up, and the opportunity, on a Contact or a Lead.">
+<!-- Social share preview (Open Graph + Twitter). Replace the base URL below with your live GitHub Pages URL. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DentalMonitoring">
+<meta property="og:title" content="Voice Debrief — The interaction writes itself">
+<meta property="og:description" content="You just talk after a visit — the AI turns it into the interaction, the recap email, the follow-up, and the opportunity, on a Contact or a Lead.">
+<meta property="og:url" content="https://corylawing.github.io/voice-debrief-demo/">
+<meta property="og:image" content="https://corylawing.github.io/voice-debrief-demo/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Voice Debrief — the interaction writes itself">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Voice Debrief — The interaction writes itself">
+<meta name="twitter:description" content="You just talk after a visit — the AI turns it into the interaction, the recap email, the follow-up, and the opportunity, on a Contact or a Lead.">
+<meta name="twitter:image" content="https://corylawing.github.io/voice-debrief-demo/og-card.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -494,7 +510,9 @@
 
       <div class="card reveal">
         <div class="fhead"><svg viewBox="0 0 24 24"><path d="M8 6h10M8 12h10M8 18h10M4 6h.01M4 12h.01M4 18h.01"/></svg><div class="eyebrow">On the interaction it logs</div></div>
+        <div class="frow"><span class="fname">Title</span><span class="fhint">The headline shown on the timeline — key theme, interaction type, and purpose</span></div>
         <div class="frow"><span class="fname">Interaction summary</span><span class="fhint">The full structured recap — written every time</span></div>
+        <div class="frow"><span class="fname">People you spoke to</span><span class="fhint">Name everyone present and each is linked to the interaction, so it shows on their timeline too — new people can be added as contacts</span></div>
         <div class="frow"><span class="fname">Interaction type</span><span class="fhint">In-person, telephone, virtual meeting, event, admin…</span></div>
         <div class="frow"><span class="fname">Date</span><span class="fhint">When the interaction happened</span></div>
         <div class="frow"><span class="fname">Purpose</span><span class="fhint">Why you met or called</span></div>
@@ -508,10 +526,15 @@
 
       <div class="card reveal">
         <div class="fhead"><svg viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM5 21a7 7 0 0 1 14 0"/></svg><div class="eyebrow">On the contact</div></div>
-        <div class="frow"><span class="fname">Job title</span><span class="fhint">e.g. practice principal, treatment coordinator</span></div>
-        <div class="frow"><span class="fname">Role</span><span class="fhint">Their position, from your DM role list</span></div>
-        <div class="frow"><span class="fname">Doctor focus</span><span class="fhint">Orthodontist, GP orthodontist, or dentist</span></div>
-        <p class="fnote">These fill only when the field is empty — the debrief never overwrites what's already on the contact.</p>
+        <div class="frow"><span class="fname">Position/Doctor Focus</span><span class="fhint">Their position — orthodontist, GP orthodontist, dentist, or staff role</span></div>
+        <div class="frow"><span class="fname">Number of locations</span><span class="fhint">One, two, or three-plus sites</span></div>
+        <div class="frow"><span class="fname">Total active patients</span><span class="fhint">Current patient count</span></div>
+        <div class="frow"><span class="fname">Observation patients per year</span><span class="fhint">Annual DM observation volume</span></div>
+        <div class="frow"><span class="fname">Uses an intra-oral scanner</span><span class="fhint">Flagged if they scan in-house</span></div>
+        <div class="frow"><span class="fname">Uses self-ligating braces</span><span class="fhint">Flagged if they use them</span></div>
+        <div class="frow"><span class="fname">Aligner cases per year</span><span class="fhint">Annual aligner volume</span></div>
+        <div class="frow"><span class="fname">Braces cases per year</span><span class="fhint">Annual braces volume</span></div>
+        <p class="fnote">Filled in when you mention them — and the recorder flags which are still blank, so you know what's worth asking.</p>
       </div>
 
     </div>
